@@ -1,0 +1,90 @@
+/* BASIC SETTINGS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #023047;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+/* LOGIN FORM */
+.login-full-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    padding: 2rem;
+    gap: 2rem;
+    background-color: #219ebc;
+    box-shadow: 0 0 20px #219ebc;
+    width: 90%;
+    max-width: 400px;
+}
+.login-container .login-image{
+    height: 100px;
+    width: 100px;
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 1rem;
+}
+.loginForm .input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.loginForm input{
+    background-color: #8ecae6;
+    border: none;
+    padding: 0.5rem;
+    color: #023047;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.loginForm .btn-group{
+    display: flex;
+    gap: 1rem;
+}
+.loginForm button{
+    padding: 0.7rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #023047;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.loginForm button:hover{
+    background-color: #023752;
+}
+
+/* WebKit Browsers (chrome, safari) */
+input:-webkit-autofill, input:-webkit-autofill:focus {
+    box-shadow: 0 0 0 1000px #8ecae6 inset;
+    -webkit-text-fill-color: #023047;
+}
+
+/* MEDIA QUERY */
+@media(min-width: 992px){
+    .login-container{
+        flex-direction: row;
+    }
+}
