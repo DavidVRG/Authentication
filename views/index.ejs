@@ -1,20 +1,35 @@
-<div class="login-full-container">
-    
-    <div class="login-container">
+<div class="container">
 
-        <div class="login-image"><img src="img/login.svg" alt="login image"></div>
+    <nav>
+        <h3 class="profile">David Varga</h3>
+        <ul>
+            <li><a href=""><i class="fa-solid fa-xl fa-arrows-rotate"></i></a></li>
+            <li><a href=""><i class="fa-regular fa-xl fa-circle-xmark"></i></a></li>
+        </ul>
+    </nav>
 
-        <form class="loginForm" action="/" method="post" autocomplete="off">
-            <h1>Login</h1>
-                <input type="text" id="name" name="name" placeholder="Username">
-                <input type="email" id="email" name="email" placeholder="Email">
-                <input type="password" id="password" name="password" placeholder="Password">
-            <div class="btn-group">
-                <button type="submit">Login</button>
-                <button type="button">Register</button>
+    <div class="chatUI">
+        <div class="chats">
+            <div class="chat">
+                <div class="name">David Varga</div>
+                <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga minus dicta rerum accusantium itaque, repellat ipsam ratione animi vitae odio quisquam nihil, voluptates recusandae soluta vel culpa voluptatibus. Sed, distinctio!</div>
+                <div class="time">2022.02.02</div>
             </div>
+            <div class="chat">
+                <div class="name">David Varga</div>
+                <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga minus dicta rerum accusantium itaque, repellat ipsam ratione animi vitae odio quisquam nihil, voluptates recusandae soluta vel culpa voluptatibus. Sed, distinctio!</div>
+                <div class="time">2022.02.02</div>
+            </div>
+            <div class="chat">
+                <div class="name">David Varga</div>
+                <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga minus dicta rerum accusantium itaque, repellat ipsam ratione animi vitae odio quisquam nihil, voluptates recusandae soluta vel culpa voluptatibus. Sed, distinctio!</div>
+                <div class="time">2022.02.02</div>
+            </div>
+        </div>
+        <form class="uploadMessage" action="/uploadMessage" method="post">
+            <input type="text" name="text" id="text">
+            <button type="submit">Enter</button>
         </form>
-
     </div>
 
 </div>

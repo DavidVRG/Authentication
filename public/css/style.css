@@ -6,21 +6,20 @@
     margin: 0;
 }
 body{
-    background-color: #023047;
+    background-color: #22223b;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
 }
 
 /* LOGIN FORM */
-.login-full-container{
+.login-register-full-container{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100vh;
 }
-.login-container{
+.login-register-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,24 +32,23 @@ body{
     width: 90%;
     max-width: 400px;
 }
-.login-container .login-image{
+.login-register-container .login-register-image{
     height: 100px;
     width: 100px;
 }
-.loginForm{
+.login-register-form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
     gap: 1rem;
 }
-.loginForm .input-group{
+.login-register-form .input-group{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
-.loginForm input{
+.login-register-form input{
     background-color: #8ecae6;
     border: none;
     padding: 0.5rem;
@@ -59,20 +57,24 @@ body{
     width: 100%;
 }
 
-.loginForm .btn-group{
+.login-register-form .btn-group{
     display: flex;
     gap: 1rem;
 }
-.loginForm button{
+.login-register-form button, .login-register-form a{
     padding: 0.7rem 1.2rem;
     border: none;
     border-radius: 5px;
     background-color: #023047;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     transition: 0.3s;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
-.loginForm button:hover{
+.login-register-form button:hover, .login-register-form a:hover{
     background-color: #023752;
 }
 
@@ -82,9 +84,82 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
     -webkit-text-fill-color: #023047;
 }
 
+
+/* INDEX PAGE */
+.container{
+    max-width: 800px;
+    width: 90%;
+    height: 100vh;
+    margin: 2rem auto;
+    background-color: #1d3557;
+    box-shadow: 0 0 20px #14253d;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: auto;
+}
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+}
+.container ul{
+    display: flex;
+    gap: 20px;
+}
+.container li{
+    list-style-type: none;
+}
+.container i{
+    color: white;
+    transition: 0.3s;
+}
+.container i:hover{
+    color: #1d3557;
+}
+
+.container .chats{
+    display: flex;
+    flex-direction: column;
+}
+.container .chat{
+    width: 100%;
+    background-color: #07496d;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+.container .name{
+    opacity: 0.8;
+    margin-bottom: 0.2rem;
+}
+.container .time{
+    float: right;
+}
+.container .text{
+    overflow: auto;
+}
+.container .uploadMessage{
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.container .uploadMessage input{
+    width: 100%;
+}
+.container .uploadMessage button{
+    padding: 0.5rem 1rem;
+}
+
+
+
 /* MEDIA QUERY */
 @media(min-width: 992px){
-    .login-container{
+    .login-register-container{
         flex-direction: row;
     }
 }
