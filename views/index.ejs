@@ -1,35 +1,22 @@
 <div class="container">
 
     <nav>
-        <h3 class="profile">David Varga</h3>
+        <h3 class="profile"></h3>
         <ul>
-            <li><a href=""><i class="fa-solid fa-xl fa-arrows-rotate"></i></a></li>
-            <li><a href=""><i class="fa-regular fa-xl fa-circle-xmark"></i></a></li>
+            <li><a href="/"><i class="fa-solid fa-xl fa-arrows-rotate"></i></a></li>
+            <form action="/logout" method="get">
+                <li><button type="submit" class="logout"><i class="fa-regular fa-2xl fa-circle-xmark"></i></button></li>
+            </form>
         </ul>
     </nav>
 
     <div class="chatUI">
         <div class="chats">
-            <div class="chat">
-                <div class="name">David Varga</div>
-                <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga minus dicta rerum accusantium itaque, repellat ipsam ratione animi vitae odio quisquam nihil, voluptates recusandae soluta vel culpa voluptatibus. Sed, distinctio!</div>
-                <div class="time">2022.02.02</div>
-            </div>
-            <div class="chat">
-                <div class="name">David Varga</div>
-                <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga minus dicta rerum accusantium itaque, repellat ipsam ratione animi vitae odio quisquam nihil, voluptates recusandae soluta vel culpa voluptatibus. Sed, distinctio!</div>
-                <div class="time">2022.02.02</div>
-            </div>
-            <div class="chat">
-                <div class="name">David Varga</div>
-                <div class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga minus dicta rerum accusantium itaque, repellat ipsam ratione animi vitae odio quisquam nihil, voluptates recusandae soluta vel culpa voluptatibus. Sed, distinctio!</div>
-                <div class="time">2022.02.02</div>
-            </div>
         </div>
-        <form class="uploadMessage" action="/uploadMessage" method="post">
+        <form class="uploadMessage" action="/postMessage" method="post">
             <input type="text" name="text" id="text">
             <button type="submit">Enter</button>
         </form>
     </div>
-
 </div>
+<script src="script/app.js"></script>
