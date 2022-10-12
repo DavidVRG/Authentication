@@ -26,15 +26,14 @@ router.post('/', async (req, res) => {
                     }
                 });
             }else{
-                res.render('login', {errorMessage: 'Login failed!'})
-            }
+                res.render('error', {message: 'Login error!', locationURL: '/login'})            }
 
         }else{
-            res.render('login', {errorMessage: 'Login failed!'})
+            res.render('error', {message: 'Login error!', locationURL: '/login'})
         }
 
     }catch{
-        res.render('login', {errorMessage: 'Login failed!'})
+        res.render('error', {message: 'Login error!', locationURL: '/login'})
     }
 })
 

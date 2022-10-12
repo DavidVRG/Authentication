@@ -39,7 +39,7 @@ router.post('/postMessage', async(req, res) => {
         await newMessage.save()
         res.redirect('/')
     }catch{
-        res.render('index', {errorMessage: 'Message create error!'})
+        res.render('error', {message: 'Message create error!', locationURL: '/'})
     }
 
 })
@@ -55,7 +55,7 @@ router.get('/getMessages', async (req, res) => {
         res.send(messagesWithoutId)
     }
     catch{
-        res.render('index', {errorMessage: 'Message render error!'})
+        res.render('error', {message: 'Message render error!', locationURL: '/'})
     }
 })
 
@@ -63,7 +63,7 @@ router.get('/logout', (req, res) => {
     if(req.session.userid){
         req.session.destroy((err) => {
             if(err){
-                res.render('index', {errorMessage: 'Logout error!'})
+                res.render('error', {message: 'Logout error!', locationURL: '/'})
             }else{
                 res.redirect('/login')
             }

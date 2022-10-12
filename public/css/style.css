@@ -173,7 +173,6 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
 }
 
 
-
 /* MEDIA QUERY */
 @media(min-width: 992px){
     .login-register-container{
@@ -182,7 +181,9 @@ input:-webkit-autofill, input:-webkit-autofill:focus {
 }
 @media(min-width: 870px){
     .container{
-        margin: 2rem auto;
         border-radius: 10px;
+    }
+    .errorMessage{
+        width: 30%;
     }
 }

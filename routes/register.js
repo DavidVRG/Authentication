@@ -18,8 +18,7 @@ router.post('/', async (req, res) => {
         await newUser.save()
         res.redirect('/')
     } catch {
-    res.render('register', {errorMessage: 'Account Create Error!'})
-  }
+        res.render('error', {message: 'Register error!', locationURL: '/register'})  }
 })
 
 module.exports = router
